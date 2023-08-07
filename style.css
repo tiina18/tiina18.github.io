@@ -1,59 +1,57 @@
 header {
     margin: auto;
     padding: 10px;
-    margin: 10px;
-    text-align: center;
-    color: cadetblue;
+    height: 100px;
+    color: whitesmoke;
+    background-image: url("pictures/texture-990071_640.jpg");
+    border-radius: 3px;
     font-size: 50px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 100px;
+}
+
+span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
 }
 
 nav {
     margin: auto;
-    max-width: 65%;
+    max-width: 60%;
     list-style-type: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
     box-shadow: 5px 5px 5px grey;
+    border-radius: 3px;
 }
 
 body {
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    padding: 10px;
-    max-width: 65%;
+    margin: 0;
+    max-width: 100%;
     max-height: fit-content;
-    min-height: 1000px;
-    box-shadow: 10px 10px 5px grey;
-    border: 2px lightgray;
-    border-style: ridge;
-    border-radius: 3px;
+    min-height: 900px;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: medium;
-    color: darkslategrey;
+    color: rgb(74, 74, 74);
+    background-color: darkgray;
 }
 
 #nav-items {
-    margin-left: auto;
-    margin-right: auto;
     display: block;
-    padding-left: 0;
 }
 
 .nav-item {
-    margin-left: auto;
-    margin-right: auto;
     display: inline;
 }
 
 .nav-item :hover {
-    background-color: darkslategrey;
-    color: black;
+    background-color: rgb(70, 97, 70);
+    color: white;
 }
 
 .active {
-    background-color: cadetblue;
+    background-color: rgb(129, 172, 129);
 }
 
 ul {
@@ -71,20 +69,53 @@ a {
     padding: 8px;
     background-color: #dddddd;
     text-decoration: none;
-    color: rgb(39, 65, 65);
+    color: black;
+}
+
+h2 {
+    color: rgb(70, 97, 70);
+}
+
+#socials {
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 1em;
+    max-width: 20%;
+}
+
+#socials>a {
+    display: inline;
+    padding: 0;
+    background-color: darkgray;
+}
+
+#socials>a>img:hover {
+    transform: scale(1.2);
 }
 
 #main-content {
     margin: auto;
+    margin-top: 20px;
     text-align: center;
     padding: 10px;
-    max-width: 65%;
+    max-width: 60%;
+    overflow: auto;
+    background-color: white;
+    box-shadow: 5px 5px 5px grey;
+    border-radius: 3px;
+}
+
+#portfolio-content {
+    margin: 10px;
+    padding: 10px;
+    overflow: auto;
+    background-color: darkgray;
 }
 
 .content {
     margin: 10px;
     padding: 10px;
-    overflow: auto;
+    background-color: white;
     border-radius: 4px;
 }
 
@@ -92,14 +123,15 @@ a {
     margin: auto;
     margin-top: 15px;
     padding: 10px;
-    border: 2px solid darkslategrey;
+    border: 2px solid darkgray;
     border-radius: 4px;
+    background-color: white;
 }
 
 .sub-content-education {
     margin: auto;
     margin-top: 15px;
     padding: 10px;
-    border: 2px solid darkslategrey;
+    border: 2px solid darkgray;
     border-radius: 4px;
 }

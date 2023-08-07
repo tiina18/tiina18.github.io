@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Projektini</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>Portfolio - Tiina Keljo</header>
+    <nav>
+        <ul id="nav-items">
+            <li class="nav-item">
+                <a href="index.html">Tietoa minusta</a>
+            </li>
+            <li class="nav-item">
+                <a href="skills.html">Osaamiseni</a>
+            </li>
+            <li class="nav-item">
+                <a class="active" href="#projects">Projektini</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="main-content">
+
+        <div class="content">
+            <h2>Projektini</h2>
+
+            <div class="sub-content">
+                <h3>Verkkokauppasovellus</h3>
+
+                <p>
+                    Huhtikuussa 2023 aloin suunnittelemaan itsenäistä projektiani Ohjelmistoalan
+                    Osaajaksi-koulutuksessa.
+                    Itsenäinen projektini oli verkkokauppasovellus, jonka oli määrä valmistua elokuun alkuun 2023
+                    mennessä.
+                    Ohjelmistoprojektinin kehittämisessä käytin apunani lukuisia eri lähteitä, muun muassa JAMK:in
+                    kurssien
+                    omia materiaaleja sekä erinäisiä verkkosivua ja hyödynsin apunani myös OpenAI:n ChatGPT-tekoälyä,
+                    jota
+                    opettelin käyttämään apunani ohjelmistoprojektini suunnitteluvaiheessa, että projektin
+                    kehittämisessä.
+                </p>
+
+                <p>
+                    Itsenäisen ohjelmistoprojektin rakentaminen alusta asti opetti minulle ohjelmakokonaisuuden
+                    rakenteen
+                    jäsentelyä, millainen kansiorakenne ohjelmistossa on hyvä olla sekä millaiset tiedostot ovat
+                    tarpeellisia tai välttämättömiä ohjelman toimivuuden kannalta. Myös eri tiedostojen väliset
+                    toiminnallisuudet konkretisoituivat omaa ohjelmaa kehittäessä. Opin rakentamaan ohjelmistolle
+                    reitit,
+                    joita ohjelma käyttää hyödyksi frontend- ja backend-toiminnallisuuksien välisessä tiedonsiirrossa.
+                    Frontend sekä backend-puolen koodilliset toiminnallisuudet hahmottuivat myös mieleeni paremmin,
+                    mitkä
+                    sovelluksen toiminnallisuuksista lukeutuvat backend-puolelle (erilaiset kontrollerit, reitittimet
+                    yms.)
+                    ja mitkä puolestaan frontend-puolelle (sovelluksen käyttöliittymän toiminnallisuudet,
+                    html-tiedostot,
+                    jotka sisälsivät koodia, jolla tieto siirretään frontend-puolelta backend-puolen kontrollereihin
+                    erilaisia reittejä hyödyntäen).
+                </p>
+
+                <p>
+                    Verkkokauppasovellusta tehdessäni opin paljon MongoDB:n käyttötarkoituksista, kuinka tietoa saadaan
+                    tallennettua sekä noudettua MongoDB-tietokantaan/tietokannasta sekä kuinka MongoDB:n tietokannan
+                    kokoelmien yksittäisiä dokumentteja saadaan mm. muokattua jälkeenpäin ohjelmasta käsin.
+                </p>
+
+                <h3>Lyhyt kuvaus kehittämästäni verkkokauppasovelluksesta</h3>
+                <p>
+                    Projektinani toteutan yksinkertaisen verkkokauppasovelluksen, jossa rekisteröitynyt käyttäjä voi
+                    tehdä
+                    tilauksia verkkosivulla näkyvistä tuotteista. Sovelluksen toteutan JavaScript-ohjelmointikielllä,
+                    Node.js:ää, Express:iä ja Mongoosea hyödyntäen, tietokannanhallintaympäristönä toimii MongoDB.
+                    Opettelen
+                    myös käyttämään OpenAI:n ChatGPT:tä hyödyksi sovelluskehityksessä.
+                </p>
+
+                <p>
+                    Verkkokaupan valikoimassa olevat tuotteet näkyvät kauppasivulla. Tuotteet voidaan suodattaa näkyviin
+                    esimerkiksi kategorioiden mukaan erillisestä hakukentästä. Teen eri tuotekategorioiden suodatukset
+                    API-kyselyillä, joilla tietyn kategorian sisältämät tuotteet suodattuvat näkyviin kauppasivulle.
+                    Tuotekategoriat on eritelty seuraavasti: kengät, vaatteet, (vaatteet: takit, mekot, housut, paidat),
+                    asusteet, (asusteet: korut, laukut, hatut). Päänäkymästä voidaan suodattaa kategoria, jota halutaan
+                    tarkastella.
+                </p>
+
+                <p>
+                    Verkkokaupassa oleville tuotteille on määritelty tietty varastosaatavuus, eli kuinka monta tuotetta
+                    on
+                    varastossa saatavilla. Suunnittelen tekeväni sovellukseeni varastonhallintaominaisuuden, joka muun
+                    muassa ilmoittaa kun varastossa on tietyn kappalemäärän alittava määrä tuotteita jäljellä.
+                </p>
+
+                <p>
+                    Tuotteet, tuotteiden määrät ja kategoriat, joihin tuotteet kuuluvat on määritelty sovelluksessani
+                    valmiiksi, eikä niitä voi itse lisätä tai muokata esim. erilliseltä ylläpitäjän hallinnointisivulta.
+                    Ylläpitäjän hallinnointisivut harkitsen tekeväni sovellukseeni jatkokehitysvaiheessa, sillä se
+                    helpottaa
+                    huomattavasti verkkokauppasovelluksen ylläpitämistä myöhemmässä vaiheessa. Sovelluksessa on
+                    yksinkertainen käyttäjänluontinäkymä, jossa luodaan käyttäjälle käyttäjänimi ja salasana, jotka
+                    tallennetaan tietokantaan users-kokoelmaan. Muita henkilökohtaisia tietoja ei käsitellä tai
+                    tallenneta
+                    users-kokoelmaan.
+                </p>
+
+                <p>
+                    Käyttäjän luontiin ja sisäänkirjaukseen päästään tilausta tehdessä, jolloin käyttäjä voi kirjautua
+                    sisään jo olemassa olevilla käyttäjätunnuksilla tai vaihtoehtoisesti luoda puuttuvat
+                    käyttäjätunnuksensa. Kun sisäänkirjautuminen onnistuu, käyttäjä ohjataan tilausvaiheeseen, jossa
+                    käyttäjältä kysytään tilauksen tekijän tiedot, joihin sisältyvät tilaajan etu- ja sukunimi.
+                    Tilauksen
+                    tiedot tallentuvat orders-kokoelmaan tietokantaan. Tilauksen tekemisen onnistuttua käyttäjälle
+                    aukeaa
+                    näkyviin tilauksen yhteenvetonäkymä. Sovellukseni kehitysvaiheessa en lisää verkkokauppaan
+                    minkäänlaista
+                    maksusuoritusmahdollisuutta, sillä en näe sitä järkeväksi sovelluksen kehitysvaiheessa.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

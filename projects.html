@@ -34,14 +34,17 @@
         <div id="main-content">
 
             <div class="content">
+
                 <h2>Projektini</h2>
 
                 <div class="sub-content">
-                    <h3>Verkkokauppasovellus</h3>
+                    <a href="https://github.com/tiina18/verkkokauppasovellus">
+                        <h3>Verkkokauppasovellus</h3>
+                    </a>
 
                     <p>
                         Huhtikuussa 2023 aloin suunnittelemaan itsenäistä projektiani Ohjelmistoalan
-                        Osaajaksi-koulutuksessa.
+                        Osaaja-koulutuksessa.
                         Itsenäinen projektini oli verkkokauppasovellus, jonka oli määrä valmistua elokuun alkuun 2023
                         mennessä.
                         Ohjelmistoprojektinin kehittämisessä käytin apunani lukuisia eri lähteitä, muun muassa JAMK:in
@@ -56,13 +59,14 @@
                     <p>
                         Itsenäisen ohjelmistoprojektin rakentaminen alusta asti opetti minulle ohjelmakokonaisuuden
                         rakenteen
-                        jäsentelyä, millainen kansiorakenne ohjelmistossa on hyvä olla sekä millaiset tiedostot ovat
+                        jäsentelyä, millainen kansiorakenne ohjelmaprojektissa on hyvä olla sekä millaiset tiedostot
+                        ovat
                         tarpeellisia tai välttämättömiä ohjelman toimivuuden kannalta. Myös eri tiedostojen väliset
                         toiminnallisuudet konkretisoituivat omaa ohjelmaa kehittäessä. Opin rakentamaan ohjelmistolle
                         reitit,
                         joita ohjelma käyttää hyödyksi frontend- ja backend-toiminnallisuuksien välisessä
                         tiedonsiirrossa.
-                        Frontend sekä backend-puolen koodilliset toiminnallisuudet hahmottuivat myös mieleeni paremmin,
+                        Frontend sekä backend-puolen koodilliset toiminnallisuudet iskostuivat myös mieleeni paremmin,
                         mitkä
                         sovelluksen toiminnallisuuksista lukeutuvat backend-puolelle (erilaiset kontrollerit,
                         reitittimet
@@ -74,71 +78,67 @@
                     </p>
 
                     <p>
-                        Verkkokauppasovellusta tehdessäni opin paljon MongoDB:n käyttötarkoituksista, kuinka tietoa
+                        Verkkokauppasovellusta tehdessäni opin paljon MongoDB:n käyttömahdollisuuksista, kuinka tietoa
                         saadaan
                         tallennettua sekä noudettua MongoDB-tietokantaan/tietokannasta sekä kuinka MongoDB:n tietokannan
-                        kokoelmien yksittäisiä dokumentteja saadaan mm. muokattua jälkeenpäin ohjelmasta käsin.
+                        kokoelmien yksittäisiä dokumentteja saadaan mm. muokattua ohjelmasta käsin.
                     </p>
 
-                    <h3>Lyhyt kuvaus kehittämästäni verkkokauppasovelluksesta</h3>
+                    <h3>Kuvaus kehittämästäni verkkokauppasovelluksesta</h3>
                     <p>
-                        Projektinani toteutan yksinkertaisen verkkokauppasovelluksen, jossa rekisteröitynyt käyttäjä voi
-                        tehdä
-                        tilauksia verkkosivulla näkyvistä tuotteista. Sovelluksen toteutan
-                        JavaScript-ohjelmointikielllä,
-                        Node.js:ää, Express:iä ja Mongoosea hyödyntäen, tietokannanhallintaympäristönä toimii MongoDB.
-                        Opettelen
-                        myös käyttämään OpenAI:n ChatGPT:tä hyödyksi sovelluskehityksessä.
-                    </p>
-
-                    <p>
-                        Verkkokaupan valikoimassa olevat tuotteet näkyvät kauppasivulla. Tuotteet voidaan suodattaa
-                        näkyviin
-                        esimerkiksi kategorioiden mukaan erillisestä hakukentästä. Teen eri tuotekategorioiden
-                        suodatukset
-                        API-kyselyillä, joilla tietyn kategorian sisältämät tuotteet suodattuvat näkyviin kauppasivulle.
-                        Tuotekategoriat on eritelty seuraavasti: kengät, vaatteet, (vaatteet: takit, mekot, housut,
-                        paidat),
-                        asusteet, (asusteet: korut, laukut, hatut). Päänäkymästä voidaan suodattaa kategoria, jota
-                        halutaan
-                        tarkastella.
+                        Projektinani toteutin yksinkertaisen verkkokauppasovelluksen, jossa rekisteröitynyt
+                        sisäänkirjautunut käyttäjä voi tehdä tilauksia verkkokaupassa olevista tuotteista. Sovelluksen
+                        frontend-toiminnallisuudet toteutin JavaScript-ohjelmointikielllä ja backend-toiminnallisuudet
+                        Node.js:ää, Express:iä ja Mongoosea hyödyntäen. Tietokantana toimii MongoDB. Opettelin myös
+                        käyttämään OpenAI:n ChatGPT:tä hyödyksi sovelluskehityksessä.
                     </p>
 
                     <p>
-                        Verkkokaupassa oleville tuotteille on määritelty tietty varastosaatavuus, eli kuinka monta
-                        tuotetta
-                        on
-                        varastossa saatavilla. Suunnittelen tekeväni sovellukseeni varastonhallintaominaisuuden, joka
-                        muun
-                        muassa ilmoittaa kun varastossa on tietyn kappalemäärän alittava määrä tuotteita jäljellä.
+                        Verkkokaupan valikoimassa olevat tuotteet näkyvät kauppasivulla, jonne tuotteet noudetaan
+                        verkkokaupan tietokannan products-kokoelmasta. Tuotteiden lisäys tietokantaan tapahtuu
+                        erilliseltä tuotteiden lisäys-lomakkeelta. Verkkokaupan tuotteet näkyvät etusivulla olevassa
+                        tuotenäkymässä. Tuotteet, tuotteiden määrät ja kategoriat, joihin tuotteet kuuluvat on
+                        määritelty sovelluksessani valmiiksi, eikä niitä voi itse lisätä tai muokata esim. erilliseltä
+                        ylläpitäjän hallinnointisivulta. Ylläpitäjän hallinnointisivut harkitsen tekeväni sovellukseeni
+                        jatkokehitysvaiheessa, sillä se helpottaa huomattavasti verkkokauppasovelluksen ylläpitämistä
+                        myöhemmässä vaiheessa.
                     </p>
 
                     <p>
-                        Tuotteet, tuotteiden määrät ja kategoriat, joihin tuotteet kuuluvat on määritelty
-                        sovelluksessani
-                        valmiiksi, eikä niitä voi itse lisätä tai muokata esim. erilliseltä ylläpitäjän
-                        hallinnointisivulta.
-                        Ylläpitäjän hallinnointisivut harkitsen tekeväni sovellukseeni jatkokehitysvaiheessa, sillä se
-                        helpottaa
-                        huomattavasti verkkokauppasovelluksen ylläpitämistä myöhemmässä vaiheessa. Sovelluksessa on
-                        yksinkertainen käyttäjänluontinäkymä, jossa luodaan käyttäjälle käyttäjänimi ja salasana, jotka
-                        tallennetaan tietokantaan users-kokoelmaan. Muita henkilökohtaisia tietoja ei käsitellä tai
-                        tallenneta
-                        users-kokoelmaan.
+                        Tuotteita voidaan etsiä tuotevalikoimasivulla olevasta hakukentästä. Hakukenttä näyttää tällä
+                        hetkellä minkä tahansa tuote-objektin sisältämän merkkijonon perusteella tuotteen verkkokaupan
+                        tuotenäkymässä, minkä aion jatkossa kehittää rajaamalla haun tapahtuvan esim. tuotenimen
+                        perusteella.
                     </p>
 
                     <p>
-                        Käyttäjän luontiin ja sisäänkirjaukseen päästään tilausta tehdessä, jolloin käyttäjä voi
-                        kirjautua
-                        sisään jo olemassa olevilla käyttäjätunnuksilla tai vaihtoehtoisesti luoda puuttuvat
-                        käyttäjätunnuksensa. Kun sisäänkirjautuminen onnistuu, käyttäjä ohjataan tilausvaiheeseen, jossa
-                        käyttäjältä kysytään tilauksen tekijän tiedot, joihin sisältyvät tilaajan etu- ja sukunimi.
-                        Tilauksen
-                        tiedot tallentuvat orders-kokoelmaan tietokantaan. Tilauksen tekemisen onnistuttua käyttäjälle
-                        aukeaa
-                        näkyviin tilauksen yhteenvetonäkymä. Sovellukseni kehitysvaiheessa en lisää verkkokauppaan
-                        minkäänlaista
-                        maksusuoritusmahdollisuutta, sillä en näe sitä järkeväksi sovelluksen kehitysvaiheessa.
+                        Verkkokaupassa oleville tuotteille on määritelty tuotekohtainen varastosaatavuus, jonka rajoissa
+                        tuotteita voidaan lisätä ostoskoriin. Ostoskoritoiminnallisuuden tein hyödyntäen local storagea
+                        (paikallista tietovarastoa), johon ostoskoriin lisätyt tuotekohtaiset objektit tallennetaan
+                        merkkijonomuodossa. Local storagesta ostoskorin taulukko noudetaan mm. tilaussivulle sekä
+                        tilauksen yhteenvetosivulle, joissa näkyvät tilattavat/tilatut tuotteet tuotetietoineen sekä
+                        tuotteiden kokonaissumma. Ostoskorista voi muokata tilattavien tuotteiden määrää lisäämällä tai
+                        vähentämällä tuotteita, poistaa tuotteita tuotekohtaisesti tai tyhjentää koko ostoskorin
+                        sisältö. Ostoskorissa näkyy ostoskorissa olevien tuotteiden kokoniassumma.
+                    </p>
+
+                    <p>
+                        Ostoskorista pääsee sisäänkirjautumisnäkymään, jossa käyttäjä voi kirjautua sisään, jos hänellä
+                        on olemassa kirjautumistunnus. Mikäli käyttäjällä ei ole kirjautumistunnusta, niin hän pääsee
+                        sisäänkirjautumisnäkymästä käyttäjänluontinäkymään, jossa hän voi luoda itselleen
+                        käyttäjätunnuksen ja salasanan. Käyttäjän luoma käyttäjänimi ja salasana tallentuvat
+                        verkkokaupan users-tietokantaan. Kun käyttäjä on kirjautunut sisään onnistuneesti niin hänet
+                        ohjataan tilaussivulle, jossa näkyy yhteenveto tilattavista tuotteista. Tilaussivulla näkyvät
+                        tilattavat tuotteet, tilattavien tuotteiden määrä, tuotteiden yksikköhinnat sekä tilauksen
+                        loppusumma. Tilausnäkymässä käyttäjältä kysytään etu- ja sukunimi, jotka tallentuvat tilattavien
+                        tuotteiden tietojen kanssa orders-kokoelmaan verkkokaupan tietokantaan.
+                    </p>
+
+                    <p>
+                        Tilauksen tekemisen onnistuttua käyttäjälle aukeaa näkyviin tilauksen yhteenvetonäkymä, jossa
+                        näkyvät tilattavien tuotteiden tiedot sekä loppusumma. Sovellukseni kehitysvaiheessa en lisää
+                        verkkokauppaan minkäänlaista maksusuoritusmahdollisuutta, sillä en tiennyt tarpeeksi
+                        maksusuorituksen testausmahdollisuuksista.
                     </p>
                 </div>
 
